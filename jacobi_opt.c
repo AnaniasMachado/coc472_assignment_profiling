@@ -64,8 +64,6 @@ int run(double *A, double *b, double *x, double *xtmp)
                     dot += A[row + col*N] * x[col];
             }
             xtmp[row] = (b[row] - dot) / A[row + row*N];
-            // int den = A[row + row*N];
-            // xtmp[row] = (b[row] - dot) / den;
         }
 
         // Swap pointers
